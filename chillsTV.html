@@ -1,0 +1,232 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="ChillsTV.css" rel="stylesheet">
+  <title>ChillsTV</title>
+</head>
+
+<body>
+    
+    <div id = "div_instructions">
+         <div class = "centered">
+             <h1> ChillsTV</h1>
+            <h3>In this study, we are curious about <span style = "color: black">Frisson</span>.<br>
+        <br>
+        Frisson is a psychophysiological response to rewarding auditory and/or visual stimuli that 
+        often induces a pleasurable or otherwise positively-valenced affective state.
+        It is the internal, spreading shivers we sometimes experience when watching a video, 
+        listening to music, or in social situations.<br>
+        <br>
+        Generally, they correspond to 
+        a sensation of feeling cold down your spine. 
+        Sometimes, frisson is accompanied by goosebumps. 
+        We use Chills and Frisson as synonyms. </h3>
+             <button id = "form0">Continue</button>
+         </div>
+     </div>
+    
+     <div id = "div_demograph_form">
+         <div class = "centered">
+             <h1> ChillsTV</h1>
+             <form id ="demograph_form">
+             Participants ID <input id = "PID" type = "text" required> <br><br>Please enter e-mail or Anonymous(for anonymity) if you are not provided with an ID
+             <br><br><br>
+             Gender <input id = "gender" type = "text" required>
+             <br><br><br>
+             Country <input id = "location_country" type = "text" required>
+             <br><br><br>
+             City <input id = "location_city" type = "text" required>
+             <br><br><br>
+             Age <input id = "age" type = "number" required>
+             <br><br><br>
+             Profession <input id = "profession" type = "text" required>
+             <br><br><br>
+             Ethnicity <input id = "ethnicity" type = "text" required>
+             <br><br><br>
+             </form>
+             <button id = "form2">Continue</button>
+         </div>
+     </div>
+    
+    <div id = "div_ocean_form">
+        <div class = "centered_div">
+            <h1> Personality/Chills Propensity Questionnaire</h1>
+            <p>Please use the slider to select the option that suits you the most.</p>
+            <br><br><br>
+            <form id = "ocean_form">
+                <p>How often do you get chills in daily life.</p>
+                <p>(LEFT) 1: Never, 2: Occasionally, 3: Sometimes, 4: Frequently, 5: Always (RIGHT)</p>
+                <br>
+                <input id="often" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Sometimes when I am reading poetry or looking at a work or art, I feel a chill or wave of excitement.</p>
+                 <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="NIO_openess" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>I have a rich vocabulary.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="vocabulary" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>I have difficulty understanding abstract ideas.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="understand_abstract" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>I have a vivid imagination.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="vivid_imagination" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>I am not interested in abstract ideas.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="not_interest_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>I have excellent ideas.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="excellent_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+            </form>
+            <button id = "form3">Continue</button>
+        </div>
+    </div>
+    
+    <div id = "div_affective_form">
+        <div class = "centered_div">
+            <h1>Indicate the extent of following you are feeling right now. Please select the option that suits you the most</h1>
+            <p></p>
+            <form id = "affective_form">
+               <p class = "description">Pleasant</p>
+                <br>
+                 <p class='answer'>(LEFT) 0: Extremely Unpleasant ------------------ 10: Extremely Pleasant (RIGHT)</p>
+                <br>
+                <input id="pleasant" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <br><br><br>
+                
+                <p class = "description">Calmness</p>
+                <br>
+                 <p class='answer'>(LEFT) 0: Extremely Calm ------------------ 10: Extremely Excited (RIGHT)</p>
+                <br>
+                <input id="calm" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <br><br><br>
+                
+                <p class = "description">Sleepy</p>
+                <br>
+                 <p class='answer'>(LEFT) 0: Extremely Sleepy ------------------ 10: Fully Awake (RIGHT)</p>
+                <br>
+                <input id="sleep" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <br><br><br>
+                
+            </form>
+            <button id = "form4">Continue</button>
+        </div>
+    </div>
+    
+     <div id = "ytplayer">
+      <div class="split left">
+        <div class = "centered">
+          <div id = "player"></div>
+        </div>
+      </div>
+
+      <div class = "split right">
+        <div class = "centered overlay">
+          <h3>Frisson Counter</h3>
+          <button id="clickme">I feel chills: 0</button>
+          <p id="p1"> Trigger Timings </p>
+          <button id="form5">Continue</button>
+        </div>
+      </div>
+     </div>
+    
+     <div id = "div_post_form">
+        <div class = "centered_div">
+            <h1> Post Experiment Questionnare</h1>
+            <p>Please select the option that suits you the most</p>
+            <form id = "post_form">
+                <p>How intense were the Chills you experienced?</p>
+                 <p>(LEFT) 1: Did not experience, 2: Not Intense, 3: Somewhat, 4: Intense, 5: Very Intense (RIGHT)</p>
+                <input id="intensity" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Have you seen this video before?</p>
+                 <p>(LEFT) 1: No, 2: Unsure, 3: Yes (RIGHT)</p>
+                <input id="seen_before" type="range" class="slider" min="0" max="2" value="1" step="1">
+                <br><br><br>
+                
+                <p>How pleasurable was this experience?</p>
+                <p class='answer'>(LEFT) 0: Extremely Unpleasant ------------------ 10: Extremely Pleasant (RIGHT)</p>
+                <br>
+                <input id="pleasant" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <br><br><br>
+                
+                <p>How relaxing was this experience?</p>
+                <p class='answer'>(LEFT) 0: Extremely Relaxing ------------------ 10: Extremely Exciting (RIGHT)</p>
+                <br>
+                <input id="calm" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <br><br><br>
+                
+                 <p>Do you feel you do not have good imagination.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="not_good_imagination" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Are you quick to understand things.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="understanding" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Do you use difficult words.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="difficult_words" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Do you spend time reflecting things.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="reflecting" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+                
+                <p>Are you full of ideas.</p>
+                <p>(LEFT) 1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree (RIGHT)</p>
+                <br>
+                <input id="full_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br><br><br>
+            </form>
+            <button id = "sendData">Submit</button>
+        </div>
+    </div>
+    
+    <div id = "div_final">
+        <div class = "centered">
+            <h1> Thank you for Participanting</h1>
+            <p>Please go back to the Platform</p>
+        </div>
+    </div>
+    
+    <script src = "ChillsTVJs.js"></script>
+</body>
+</html>
+
+
+<!--
+             <select id="gender" multiple>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+-->
