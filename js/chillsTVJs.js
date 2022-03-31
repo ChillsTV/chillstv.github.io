@@ -129,7 +129,7 @@ var chillsButton = document.getElementById("clickme");
 chillsButton.onclick = function() {
   duration.push(player.playerInfo.currentTime.toFixed(2));
   chillsCount += 1;
-  chillsButton.innerHTML = "I feel chills: " + chillsCount;
+  chillsButton.innerHTML = "I felt a chill: " + chillsCount;
   //document.getElementById("p1").innerHTML =  duration ;
 };
 
@@ -178,8 +178,7 @@ gotoForm4Button.onclick = function() {
     divForm5.style.visibility = "hidden";
     divYTPlayer.style.visibility = "visible";
     divFinal.style.visibility = "hidden";
-    alert("Welcome to the video page. Please keep your mouse over the 'I feel Chills' button on the right side. When you experience a shiver down your spine please click the button.")
-    alert("Please do watch the complete video. You will be able to continue once the video is finished completely. Thank you")
+    setTimeout(alertMessage, 500);
     scrollTop();
     gotoForm5Button.style.visibility = "hidden";
     document.getElementById("p1").style.visibility = "hidden";
@@ -209,6 +208,12 @@ sendButton.onclick = function() {
     divFinal.style.visibility = "visible";
     gotoForm5Button.style.visibility = "hidden";
     scrollTop();
+}
+
+
+function alertMessage() {
+    alert("Welcome to the video page. Please keep your mouse over the 'I felt a chill' button on the right side. When you experience a shiver down your spine please click the button.")
+    alert("Please watch the video in its entirety. You will only be able to continue once the video has played until the end. Thank you")
 }
 
 

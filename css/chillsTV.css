@@ -1,3 +1,173 @@
+/*custom font*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+* {margin: 0; padding: 0;} 
+html {
+	min-height: 100%;
+	/*Image only BG fallback*/
+	
+	/*background = gradient + image pattern combo*/
+	
+  
+}
+
+#logo img{
+  float: left;
+  width: 260px;
+  padding-left:4%;
+  padding-top:20px;
+
+}
+
+#logo2 img{
+  float: right;
+  width: 320px;
+  padding-right:4%;
+  padding-top:20px;
+
+}
+
+
+body {
+	font-family: 'Arimo', sans-serif;
+  overflow: auto;
+  /*animation: scroll 500s linear infinite;*/
+  background: url("pexels.jpg") #111111;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+
+h1{
+  color: aliceblue;
+  font-size: 45pt;
+  font-weight: bolder;
+}
+
+h2{
+  font-size: 20pt;
+  padding-top: 5%;
+  padding-right: 20%;
+  padding-left: 18%;
+  text-align: left;
+  color:lightgrey;
+  
+}
+
+#div_affective_form h2{
+  padding: 5%;
+}
+
+h3{
+  line-height: 135%;
+  text-align:left;
+  padding: 10%;
+}
+
+select{
+  padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+  height: 50px;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 15px;
+  float: right;
+}
+
+label{
+  float: right;
+  clear: left;
+  width:fit-content;
+  text-align:start;
+}
+
+input {
+  padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 15px;
+  float: right;
+}
+
+.form_ques{
+  padding:2% 20%;
+  color:aliceblue;
+}
+
+#div_instructions{
+  overflow: hidden;
+}
+
+#div_ocean_form{
+  min-height: 500px;
+  /*height:max-content;
+  width:max-content;
+  z-index: 200;*/
+}
+
+#ocean_form {
+  padding: 5%;
+  line-height: 30px;
+}
+
+#div-final p{
+  font-size:20pt;
+
+}
+
+.description{
+  font-size: 16pt;
+  font-weight: 800;
+  color: #e8e6f7;
+
+}
+
+.answer{
+  text-align: center;
+  font-size: 12pt;
+  font-weight:600;
+
+}
 /* Split the screen in half */
 .split {
     height: 100%;
@@ -16,7 +186,6 @@
     background-color: #111;
   }
   
-  /* Control the right side */
   .right {
     right: 0;
     width: 30%;
@@ -31,27 +200,44 @@
     text-align: center;
   }
 
-  .centered_div {
+  .inst_centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+  }
+
+  .div_centered {
     position: absolute;
     top: 10%;
     left: 50%;
+    /*overflow: hidden;*/
     transform: translate(-50%, 0%);
     text-align: center;
   }
 
-  .bottom {
+  /*.bottom {
     bottom: 0%;
-  }
+  }*/
   
 
   button {
-    border: 4px solid black;
+    border: 4px solid whitesmoke;
+    font-family: montserrat, arial, verdana;
     padding: 16px 24px;
     position: relative;
     background-color: transparent;
-    font-size: 38px;
+    font-size: 30px;
+    color:whitesmoke;
   }
 
+.scale{
+  font-size: 25px;
+  color:whitesmoke;
+  font-family: montserrat, arial, verdana;
+  padding: 5px;
+}
 
 .slider {
   -webkit-appearance: none;
