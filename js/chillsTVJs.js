@@ -12,6 +12,7 @@ var DBURL = 'https://script.google.com/macros/s/AKfycbxn0A1pw0ZWSPZpVNRXzDbecgOp
 var thresh = 10; // ViewCounts per video
 var disableKeyboard = 1;
 var displayControls = 0;
+var sequence = 0 ; // 0 for Random and 1 for Sequential
 
 var divForm0 = document.getElementById("div_instructions");
 var divForm1 = document.getElementById("div_demograph_form");
@@ -47,7 +48,7 @@ function fetchDB(){
       })
       .then(function(myJson) {
         videoDB=myJson; // DB of videoIDs and ViewCount
-        //console.log(videoDB); 
+        console.log(videoDB); 
         parseDB();
       });
 }
@@ -56,7 +57,15 @@ function parseDB(){
     thresh = videoDB[1][2]
     disableKeyboard = videoDB[2][2]
     displayControls = videoDB[3][2]
+    sequence = videoDB[4][2]
 
+    var i = 0
+    while(i == 0){
+        i = getRandomInt(videoDB.length)
+    }
+
+    if(sequence == 1){
+    //For Sequantial
     
     for(let i = 1 ; i < videoDB.length ; i++){
         if(videoDB[i][1] < thresh){
@@ -64,11 +73,31 @@ function parseDB(){
             break;
         }
     }
+    }
+    else{
+    //For Random
+        while(videoDB[i][1] >= thresh){
+                i = getRandomInt(videoDB.length)
+                console.log(i)
+                while(i == 0){
+                    i = getRandomInt(videoDB.length)
+                }
+            }
+        currentVideoID = videoDB[i][0];
+    }        
+
+
+
+
     
     console.log(currentVideoID);
     //currentVideoID = 'HqbnuVF__wA'
     loadVideo();
     
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 function loadVideo(){
@@ -135,13 +164,22 @@ chillsButton.onclick = function() {
 
 
 gotoForm1Button.onclick = function() {
+    // divForm0.style.visibility = "hidden";
+    // divForm1.style.visibility = "visible";
+    // divForm2.style.visibility = "hidden";
+    // divForm3.style.visibility = "hidden";
+    // divForm5.style.visibility = "hidden";
+    // divYTPlayer.style.visibility = "hidden";
+    // divFinal.style.visibility = "hidden";
+
     divForm0.style.visibility = "hidden";
-    divForm1.style.visibility = "visible";
+    divForm1.style.visibility = "hidden";
     divForm2.style.visibility = "hidden";
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
-    divYTPlayer.style.visibility = "hidden";
+    divYTPlayer.style.visibility = "visible";
     divFinal.style.visibility = "hidden";
+
     scrollTop();
 }
 
