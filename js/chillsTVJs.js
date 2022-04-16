@@ -164,22 +164,13 @@ chillsButton.onclick = function() {
 
 
 gotoForm1Button.onclick = function() {
-    // divForm0.style.visibility = "hidden";
-    // divForm1.style.visibility = "visible";
-    // divForm2.style.visibility = "hidden";
-    // divForm3.style.visibility = "hidden";
-    // divForm5.style.visibility = "hidden";
-    // divYTPlayer.style.visibility = "hidden";
-    // divFinal.style.visibility = "hidden";
-
     divForm0.style.visibility = "hidden";
-    divForm1.style.visibility = "hidden";
+    divForm1.style.visibility = "visible";
     divForm2.style.visibility = "hidden";
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
-    divYTPlayer.style.visibility = "visible";
+    divYTPlayer.style.visibility = "hidden";
     divFinal.style.visibility = "hidden";
-
     scrollTop();
 }
 
