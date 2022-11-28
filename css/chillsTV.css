@@ -85,7 +85,11 @@ h2{
   
 }
 
-#div_affective_form h2{
+#div_panas_form h2{
+  padding: 5%;
+}
+
+#div_panas_form2 h2{
   padding: 5%;
 }
 
@@ -110,8 +114,6 @@ select{
 }
 
 label{
-  float: right;
-  clear: left;
   width:fit-content;
   text-align:start;
 }
@@ -252,6 +254,7 @@ input {
 }
 
 
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -269,4 +272,120 @@ input {
   background: #04AA6D;
   cursor: pointer;
 }
+
+@mixin rangeThumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: #37adbf;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+
+.range {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+.range input {
+  width: 100%;
+  /*position: absolute;*/
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @include rangeThumb;
+  }
+
+.range::-moz-range-thumb {
+    @include rangeThumb;
+  }
+
+.range::-ms-thumb {
+    @include rangeThumb;
+  }
+
+.range::-webkit-slider-runnable-track {
+    @include rangeTrack;
+  }
+
+.range::-moz-range-track {
+    @include rangeTrack;
+  }
+
+.range::-ms-track {
+    @include rangeTrack;
+  }
+
+.range:focus {
+    background: none;
+    outline: none;
+  }
+
+.range::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+
+.range-labels {
+  /*margin: 18px -41px 0;*/
+  padding: 0;
+  list-style: none;
+}
+  
+  li {
+    position: relative;
+    float: left;
+    width: 123px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 15px;
+    cursor: pointer;
+  }
+    
+    /*.range-labels::before {
+      /*position: absolute;*/
+      /*top: -25px;
+      right: 0;
+      left: 0;
+      content: "";
+      margin: 0 auto;
+      width: 9px;
+      height: 9px;
+      background: #b2b2b2;
+      border-radius: 50%;
+    }
+  
+  
+  .active {
+    color: #37adbf;
+  }
+  
+  .selected::before {
+    background: #37adbf;
+  }
+  
+  .active.selected::before {
+    display: none;
+  }*/
+
+  .slider:hover {
+    opacity: 1;
+  }
 

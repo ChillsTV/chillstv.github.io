@@ -4,9 +4,8 @@ var currentVideoID = '';
 
 
 
-var sendURL = 'https://script.google.com/macros/s/AKfycbyBSAC1EZmJ0XvLi7JB8TtrWmbGFszdc3C5Y1Lezb6-_HkVG41JaYnaYO7OFn-NK3Lu/exec' ;
-//var DBURL = 'https://script.google.com/macros/s/AKfycbyJdaqDtzAFYNRj5N4fl6JZxgK0df2uqlODYvbTfbzDCc90N1Ct30z1enoD3YGl4ztTeQ/exec';
-var DBURL = 'https://script.google.com/macros/s/AKfycbxn0A1pw0ZWSPZpVNRXzDbecgOpMDfSfyUCvGf1HUTKAGaqKC3W3_wEaC-ZcD-69pVcDw/exec' ;
+var sendURL = 'https://script.google.com/macros/s/AKfycbxPnRMFR1xwVol6Ut3b7lxLsrJ0HCPmBzXWmGBkwONmQPcINMSE8GV_B-yvNsTa8pGOHQ/exec' ;
+var DBURL = 'https://script.google.com/macros/s/AKfycbztl_wrfP-PU6b3-grsY6daP09NGhk6axP35HCPZHTKFG8hzfEbND2r5MdQSRSnZllX/exec' ;
 
 
 var thresh = 10; // ViewCounts per video
@@ -17,9 +16,10 @@ var sequence = 0 ; // 0 for Random and 1 for Sequential
 var divForm0 = document.getElementById("div_instructions");
 var divForm1 = document.getElementById("div_demograph_form");
 var divForm2 = document.getElementById("div_ocean_form");
-var divForm3 = document.getElementById("div_affective_form");
+var divForm3 = document.getElementById("div_panas_form");
 var divYTPlayer = document.getElementById("ytplayer"); // Form 4
 var divForm5 = document.getElementById("div_post_form");
+var divForm6 = document.getElementById("div_panas_form2");
 var divFinal = document.getElementById("div_final");
 
 var gotoForm1Button = document.getElementById("form0");
@@ -27,17 +27,20 @@ var gotoForm2Button = document.getElementById("form2");
 var gotoForm3Button = document.getElementById("form3");
 var gotoForm4Button = document.getElementById("form4");
 var gotoForm5Button = document.getElementById("form5");
+var gotoForm6Button = document.getElementById("form6");
 var sendButton = document.getElementById("sendData");
 
 var form1 = document.getElementById('demograph_form');
 var form2 = document.getElementById('ocean_form');
-var form3 = document.getElementById('affective_form');
+var form3 = document.getElementById('panas_form');
 var form5 = document.getElementById('post_form');
+var form6 = document.getElementById('panas_form2');
 
 divForm1.style.visibility = "hidden";
 divForm2.style.visibility = "hidden";
 divForm3.style.visibility = "hidden";
 divForm5.style.visibility = "hidden";
+divForm6.style.visibility = "hidden";
 divYTPlayer.style.visibility = "hidden";
 divFinal.style.visibility = "hidden";
 
@@ -142,7 +145,7 @@ function onPlayerStateChange(event) {
 
 function onPlayerError(event){
     console.log("EROROROROROROR");
-    alert("Sorry, There seems to be an error with the experiment, Please contact experimenters");
+    alert("Sorry, There seems to be an error with the experiment, Please refresh the page. If problem persists, please contact experimenters");
     gotoForm5Button.style.visibility = "visible";
 }
 
@@ -170,6 +173,7 @@ gotoForm1Button.onclick = function() {
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
     divYTPlayer.style.visibility = "hidden";
+    divForm6.style.visibility = "hidden";
     divFinal.style.visibility = "hidden";
     scrollTop();
 }
@@ -181,6 +185,7 @@ gotoForm2Button.onclick = function() {
     divForm2.style.visibility = "visible";
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
+    divForm6.style.visibility = "hidden";
     divYTPlayer.style.visibility = "hidden";
     divFinal.style.visibility = "hidden";
     scrollTop();
@@ -193,6 +198,7 @@ gotoForm3Button.onclick = function() {
     divForm2.style.visibility = "hidden";
     divForm3.style.visibility = "visible";
     divForm5.style.visibility = "hidden";
+    divForm6.style.visibility = "hidden";
     divYTPlayer.style.visibility = "hidden";
     divFinal.style.visibility = "hidden";
     scrollTop();
@@ -205,6 +211,7 @@ gotoForm4Button.onclick = function() {
     divForm2.style.visibility = "hidden";
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
+    divForm6.style.visibility = "hidden";
     divYTPlayer.style.visibility = "visible";
     divFinal.style.visibility = "hidden";
     setTimeout(alertMessage, 500);
@@ -220,19 +227,36 @@ gotoForm5Button.onclick = function() {
     divForm3.style.visibility = "hidden";
     divYTPlayer.style.visibility = "hidden";
     divForm5.style.visibility = "visible";
+    divForm6.style.visibility = "hidden";
     divFinal.style.visibility = "hidden";
     gotoForm5Button.style.visibility = "hidden";
     scrollTop();
     
 }
 
-sendButton.onclick = function() {
+gotoForm6Button.onclick = function() {
     getFormData(form5,5);
+    divForm0.style.visibility = "hidden";
+    divForm1.style.visibility = "hidden";
+    divForm2.style.visibility = "hidden";
+    divForm3.style.visibility = "hidden";
+    divYTPlayer.style.visibility = "hidden";
+    divForm5.style.visibility = "hidden";
+    divForm6.style.visibility = "visible";
+    divFinal.style.visibility = "hidden";
+    gotoForm6Button.style.visibility = "hidden";
+    scrollTop();
+    
+}
+
+sendButton.onclick = function() {
+    getFormData(form6,6);
     sendData();
     divForm0.style.visibility = "hidden";
     divForm2.style.visibility = "hidden";
     divForm3.style.visibility = "hidden";
     divForm5.style.visibility = "hidden";
+    divForm6.style.visibility = "hidden";
     divYTPlayer.style.visibility = "hidden";
     divFinal.style.visibility = "visible";
     gotoForm5Button.style.visibility = "hidden";
@@ -257,6 +281,7 @@ var PID = [[]] ;
 var OCEAN =[[]] ;
 var AFF =[[]] ;
 var POST_AFF =[[]] ;
+var POST_PANAS = [[]];
 
 function scrollTop(){
   document.body.scrollTop = 0; // For Safari
@@ -288,19 +313,23 @@ function getFormData(_form, _num){
         case 2 : OCEAN = formTemp;
         case 3 : AFF = formTemp;
         case 5 : POST_AFF = formTemp;
+        case 6 : POST_PANAS = formTemp;
     }
 }
 
 function sendData(){
     
+    console.log("Sending Data");
+    
     var data = new FormData();
     data.set('VideoID',currentVideoID);
     data.set('PID',PID);
-    data.set('OCEAN',OCEAN);
-    data.set('Affective',AFF);
+    data.set('OCEAN_Aff',OCEAN);
+    data.set('PANAS',AFF);
     data.set('Chills',chillsCount);
     data.set('Triggers',duration);
     data.set('Post_Affective',POST_AFF);
+    data.set('Post_PANAS',POST_PANAS);
 
     console.log(data);
 

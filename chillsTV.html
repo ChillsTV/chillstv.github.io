@@ -28,7 +28,9 @@
              <h1> ChillsTV</h1>
 
         <h3>     
-        In this experiment, we are interested in studying people's emotional reaction to film and music. Specifically, we are interested in the feeling of <b>emotional chills and shivers</b>. These are best described as the feeling of cold down your spine that are NOT related to temperature or sickness but that are caused by some strong emotions. Emotional chills are often accompanied by goosebumps, hairs rising on the arm. 
+        In this experiment, we are interested in studying people's emotional reaction to film and music. Specifically, we are interested in the feeling of <b>emotional chills and shivers</b>. 
+        These are best described as the feeling of cold down your spine that are NOT related to temperature or sickness but that are caused by some strong emotions. 
+        Emotional chills are often accompanied by goosebumps, hairs rising on the arm. 
         <br><br>
         By continuing, you agree to understand what chills are, the purpose of the experiment and consent to be part of the experiment. 
 
@@ -38,13 +40,12 @@
              <button id = "form0">Continue</button>
          </div>
     </div>
-    
      <div id = "div_demograph_form" >
          <div class = "div_centered">
              <h1> ChillsTV</h1>
              <br>
              <form id ="demograph_form">
-                 <p class = "form_ques">
+                <p class = "form_ques">
                 <label for="platform">Platform identifier</label></p>
                 <select name="platforms" id="pltfrm">
                   <option value="select">Select the participating platform</option>
@@ -85,58 +86,219 @@
             <form class = "wholeform" id = "ocean_form">
                 <p class= 'description'>How often do you get chills in daily life?</p>
                 <br>
-                <p class = 'answer'>1: <b>Never</b>, 2: Occasionally, 3: Sometimes, 4: Frequently, 5: <b>Always</b></p>
                 <br>
-                <input id="often" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="often" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Never</li>
+                    <li style = 'width: 20%;'>Occasionally</li>
+                    <li style = 'width: 20%;'>Sometimes</li> 
+                    <li style = 'width: 20%;'>Frequently</li>
+                    <li style = 'width: 20%;'>Always</li>
+                </ul>
                 <br><br><br>
                 
                 <p class= 'description'>Sometimes when I am reading poetry or looking at a work or art, I feel a chill or wave of excitement.</p>
-                 <br>
-                 <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="NIO_openess" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br>
+                <div class = 'range'><input id="NIO_openess" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
 
                 <p class= 'description'>Please select option 5 for this question.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="vocabulary" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="vocabulary" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
-                <p class= 'description'>I have a rich vocabulary.</p>
+                <h3 class = 'description'>I am someone who...</h3>
+                <p class= 'description'>Tends to be quiet.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="vocabulary" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="quiet" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
-                <p class= 'description'>I have difficulty understanding abstract ideas.</p>
+                <p class= 'description'>Is compassionate, has a soft heart.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="understand_abstract" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="compassionate" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
-                <p class= 'description'>I have a vivid imagination.</p>
+                <p class= 'description'>Tends to be disorganized.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="vivid_imagination" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="disorganized" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
-                <p class= 'description'>I am not interested in abstract ideas.</p>
+                <p class= 'description'>Worries a lot.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="not_interest_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="worry" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
-                <p class= 'description'>I have excellent ideas.</p>
+                <p class= 'description'>Is fascinated by art, music, or literature.</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="excellent_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class = 'range'><input id="art-fascination" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is dominant, act as a leader.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="dominant" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is sometimes rude to others.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="rude" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Has difficulty getting started on tasks.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="start-difficulty" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Tends to feel depressed, blue.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="depressed" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Has little interest in abstract ideas.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="no-interest-abstract" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is full of energy.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="energy" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Assumes the best about people.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="best-ppl-assume" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is reliable, can always be counted on.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="reliable" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is emotionally stable, not easily upset.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="stable" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
+                <br><br><br>
+
+                <p class= 'description'>Is original, comes up with new ideas.</p>
+                <br>
+                <br>
+                <div class = 'range'><input id="original" type="range" class="slider" min="0" max="4" value="2" step="1"></div>
+                <ul class='range-labels'><li class = 'active selected' style = 'width: 20%;'>Strongly Disagree</li>
+                    <li style = 'width: 20%;'>Disagree</li>
+                    <li style = 'width: 20%;'>Neutral</li> 
+                    <li style = 'width: 20%;'>Agree</li>
+                    <li style = 'width: 20%;'>Strongly Agree</li>
+                </ul>
                 <br><br><br>
                 
             </form>
@@ -144,37 +306,325 @@
         </div>
     </div>
     
-    <div id = "div_affective_form">
-        <div class = "div_centered">
-            <h1>What is your current mood?</h1> 
-            <h2>Please select the option that suits you the most.</h2>
+    <div id="div_panas_form">
+        <div class="div_centered">
+            <h1>How do you feel? </h1>
+            <h2>Please indicate the extent you have felt this way over the past week.</h2>
             <p></p>
-            <form class = "wholeform" id = "affective_form">
-                <p class = "description">Pleasant</p>
+            <form class="wholeform" id="panas_form">
+                <p class="description">Interested</p>
                 <br>
-                 <p class='answer'>0: Extremely Unpleasant ------------------------------------------------------------------- 10: Extremely Pleasant</p>
                 <br>
-                <input id="pleasant" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <div class="range"><input id="interested" type="range" class="slider" min="1" max="5" value="5"
+                        step="1"></div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
                 <br><br><br><br><br>
-                
-                <p class = "description">Calmness</p>
+
+                <p class="description">Distressed</p>
                 <br>
-                 <p class='answer'>0: Extremely Calm -------------------------------------------------------------------------- 10: Extremely Excited</p>
                 <br>
-                <input id="calm" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <div class="range"><input id="distressed" type="range" class="slider" min="1" max="5" value="5"
+                        step="1"></div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
                 <br><br><br><br><br>
-                
-                <p class = "description">Sleepy</p>
+
+                <p class="description">Excited</p>
                 <br>
-                 <p class='answer'>0: Extremely Sleepy -------------------------------------------------------------------------------- 10: Fully Awake</p>
                 <br>
-                <input id="sleep" type="range" class="slider" min="0" max="10" value="5" step="1">
+                <div class="range"><input id="excited" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
                 <br><br><br><br><br>
-                
+
+                <p class="description">Upset</p>
+                <br>
+                <br>
+                <div class="range"><input id="upset" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Strong</p>
+                <br>
+                <br>
+                <div class="range"><input id="strong" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Guilty</p>
+                <br>
+                <br>
+                <div class="range"><input id="guilty" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Scared</p>
+                <br>
+                <br>
+                <div class="range"><input id="scared" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Hostile</p>
+                <br>
+                <br>
+                <div class="range"><input id="hostile" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Enthusiastic</p>
+                <br>
+                <br>
+                <div class="range"><input id="enthusiastic" type="range" class="slider" min="1" max="5" value="5"
+                        step="1"></div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Proud</p>
+                <br>
+                <br>
+                <div class="range"><input id="proud" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Irritable</p>
+                <br>
+                <br>
+                <div class="range"><input id="irritable" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Alert</p>
+                <br>
+                <br>
+                <div class="range"><input id="alert" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Ashamed</p>
+                <br>
+                <br>
+                <div class="range"><input id="ashamed" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Inspired</p>
+                <br>
+                <br>
+                <div class="range"><input id="inspired" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Nervous</p>
+                <br>
+                <br>
+                <div class="range"><input id="nervous" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Determined</p>
+                <br>
+                <br>
+                <div class="range"><input id="determined" type="range" class="slider" min="1" max="5" value="5"
+                        step="1"></div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Attentive</p>
+                <br>
+                <br>
+                <div class="range"><input id="attentive" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Jittery</p>
+                <br>
+                <br>
+                <div class="range"><input id="jittery" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Active</p>
+                <br>
+                <br>
+                <div class="range"><input id="active" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                <p class="description">Afraid</p>
+                <br>
+                <br>
+                <div class="range"><input id="afraid" type="range" class="slider" min="1" max="5" value="5" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                    <li style='width: 20%;'>A little</li>
+                    <li style='width: 20%;'>Moderately</li>
+                    <li style='width: 20%;'>Quite a bit</li>
+                    <li style='width: 20%;'>Extremely</li>
+                </ul>
+                <br><br><br><br><br>
+
+                 <p class='description'> How pleasurable are you feeling right now?</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="pleasure_self" type="range" class="slider" min="0" max="4" value="2" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Not pleasurable at all</li>
+                        <li style='width: 20%;'>Not so pleasurable</li>
+                        <li style='width: 20%;'>Neutral</li>
+                        <li style='width: 20%;'>Pleasurable</li>
+                        <li style='width: 20%;'>Extremely pleasurable</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                <p class='description'>How excited are you feeling right now?</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="arousal_self" type="range" class="slider" min="0" max="4" value="2" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Not excited at all</li>
+                        <li style='width: 20%;'>Not so excited</li>
+                        <li style='width: 20%;'>Neutral</li>
+                        <li style='width: 20%;'>Excited</li>
+                        <li style='width: 20%;'>Very excited</li>
+                    </ul>
+                    <br><br><br><br><br>
+
             </form>
-            <button id = "form4">Continue</button>
+            <button id="form4">Continue</button>
         </div>
     </div>
+
     
      <div id = "ytplayer">
       <div class="split left">
@@ -208,90 +658,398 @@
       </div>
      </div>
     
-     <div id = "div_post_form">
-        <div class = "div_centered">
+     <div id="div_post_form">
+        <div class="div_centered">
             <h1> Post Experiment Questionnare</h1>
             <h2>Please select the option that suits you the most.</h2>
             <br><br><br>
-            <form id = "post_form">
+            <form id="post_form">
 
-                <p class = "description">Have you seen this video before? </p>
+                <p class="description">Have you seen this video before? </p>
                 <select name="seen" id="seen">
-                  <option value="select">Please select the option</option>
-                  <option value="No">No</option>
-                  <option value="Yes">Yes</option>
-                  <option value="Unsure">Unsure</option>
-                  </select>
-                  <br><br><br><br><br>
+                    <option value="select">Please select the option</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Unsure">Unsure</option>
+                </select>
+                <br><br><br><br><br>
 
-                 <p class = "description">Select '2' in this question </p>
+                <p class="description">Select '2' in this question </p>
                 <select name="check" id="check_2">
-                  <option value="select">Please select the option</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  </select>
-                  <br><br><br><br><br>
-
-                <p class = 'description'>How intense were the Chills you experienced?</p>
-                <br>
-                 <p class = 'answer'>1: Did not experience, 2: Not Intense, 3: Somewhat, 4: Intense, 5: Very Intense</p>
-                 <br>
-                <input id="intensity" type="range" class="slider" min="0" max="4" value="2" step="1">
-                <br><br><br><br><br>
-                
-                <p class = 'description'> How pleasurable was this experience?</p>
-                <br>
-                 <p class = 'answer'>1: Extremely Uncomfortable, 2: Uncomfortable, 3: Neutral, 4: Pleasurable, 5: Extremely Pleasurable</p>
-                 <br>
-                <input id="pleasure" type="range" class="slider" min="0" max="4" value="2" step="1">
-                <br><br><br><br><br>
-                
-                <p class = 'description'>How relaxing was this experience?</p>
-                <br>
-                 <p class = 'answer'>1: Extremely Uncomfortable, 2: Uncomfortable, 3: Neutral, 4: Relaxing, 5: Extremely Relaxing</p>
-                 <br>
-                <input id="relax" type="range" class="slider" min="0" max="4" value="2" step="1">
+                    <option value="select">Please select the option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
                 <br><br><br><br><br>
 
-                 <p class = 'description'>Do you feel you do not have good imagination.</p>
-                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
+                <p class='description'>How intense were the Chills you experienced?</p>
                 <br>
-                <input id="not_good_imagination" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <br>
+                <div class='range'><input id="intensity" type="range" class="slider" min="0" max="4" value="2" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Did not experience</li>
+                    <li style='width: 20%;'>Not Intense</li>
+                    <li style='width: 20%;'>Somewhat</li>
+                    <li style='width: 20%;'>Intense</li>
+                    <li style='width: 20%;'>Very Intense</li>
+                </ul>
                 <br><br><br><br><br>
-                
-                <p class = 'description'>Are you quick to understand things.</p>
+
+                <p class='description'> How pleasurable was this experience?</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="understanding" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class="range"><input id="pleasure_exp" type="range" class="slider" min="0" max="4" value="2" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Not pleasurable at all</li>
+                    <li style='width: 20%;'>Not so pleasurable</li>
+                    <li style='width: 20%;'>Neutral</li>
+                    <li style='width: 20%;'>Pleasurable</li>
+                    <li style='width: 20%;'>Strongly pleasurable</li>
+                </ul>
                 <br><br><br><br><br>
-                
-                <p class = 'description'>Do you use difficult words.</p>
+
+                <p class='description'>How relaxing was this experience?</p>
                 <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
                 <br>
-                <input id="difficult_words" type="range" class="slider" min="0" max="4" value="2" step="1">
+                <div class="range"><input id="relax_exp" type="range" class="slider" min="0" max="4" value="2" step="1">
+                </div>
+                <ul class='range-labels'>
+                    <li class='active selected' style='width: 20%;'>Not relaxing at all</li>
+                    <li style='width: 20%;'>Not so relaxing</li>
+                    <li style='width: 20%;'>Neutral</li>
+                    <li style='width: 20%;'>Relaxing</li>
+                    <li style='width: 20%;'>Very relaxing</li>
+                </ul>
                 <br><br><br><br><br>
-                
-                <p class = 'description'>Do you spend time reflecting things.</p>
-                <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
-                <br>
-                <input id="reflecting" type="range" class="slider" min="0" max="4" value="2" step="1">
-                <br><br><br><br><br>
-                
-                <p class = 'description'>Are you full of ideas.</p>
-                <br>
-                <p class = 'answer'>1: Strongly Disagree, 2: Disagree, 3: Neutral, 4: Agree, 5: Strongly Agree</p>
-                <br>
-                <input id="full_ideas" type="range" class="slider" min="0" max="4" value="2" step="1">
-                <br><br><br><br><br>
+
+
+                <p class='description'> How pleasurable are you feeling right now?</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="pleasure_self_post" type="range" class="slider" min="0" max="4" value="2" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Not pleasurable at all</li>
+                        <li style='width: 20%;'>Not so pleasurable</li>
+                        <li style='width: 20%;'>Neutral</li>
+                        <li style='width: 20%;'>Pleasurable</li>
+                        <li style='width: 20%;'>Extremely pleasurable</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                <p class='description'>How excited are you feeling right now?</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="arousal_self_post" type="range" class="slider" min="0" max="4" value="2" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Not excited at all</li>
+                        <li style='width: 20%;'>Not so excited</li>
+                        <li style='width: 20%;'>Neutral</li>
+                        <li style='width: 20%;'>Excited</li>
+                        <li style='width: 20%;'>Very excited</li>
+                    </ul>
+                    <br><br><br><br><br>
+
             </form>
-            <button id = "sendData">Submit</button>
+            <button id="form6">Continue</button>
         </div>
-    </div>
+
+        <div id="div_panas_form2">
+            <div class="div_centered">
+                <h1>How do you feel? </h1>
+                <h2>Please indicate the extent you have felt this way.</h2>
+                <p></p>
+                <form class="wholeform" id="panas_form2">
+                    <p class="description">Interested</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="interested" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Distressed</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="distressed" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Excited</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="excited" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Upset</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="upset" type="range" class="slider" min="1" max="5" value="5" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Strong</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="strong" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Guilty</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="guilty" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Scared</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="scared" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Hostile</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="hostile" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Enthusiastic</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="enthusiastic" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Proud</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="proud" type="range" class="slider" min="1" max="5" value="5" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Irritable</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="irritable" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Alert</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="alert" type="range" class="slider" min="1" max="5" value="5" step="1">
+                    </div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Ashamed</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="ashamed" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Inspired</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="inspired" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Nervous</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="nervous" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Determined</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="determined" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Attentive</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="attentive" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Jittery</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="jittery" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Active</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="active" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+                    <p class="description">Afraid</p>
+                    <br>
+                    <br>
+                    <div class="range"><input id="afraid" type="range" class="slider" min="1" max="5" value="5"
+                            step="1"></div>
+                    <ul class='range-labels'>
+                        <li class='active selected' style='width: 20%;'>Very slightly or not at all</li>
+                        <li style='width: 20%;'>A little</li>
+                        <li style='width: 20%;'>Moderately</li>
+                        <li style='width: 20%;'>Quite a bit</li>
+                        <li style='width: 20%;'>Extremely</li>
+                    </ul>
+                    <br><br><br><br><br>
+
+
+
+                </form>
+                <button id="sendData">Submit</button>
+            </div>
+        </div>
     
     <div id = "div_final">
         <div class = "centered">
